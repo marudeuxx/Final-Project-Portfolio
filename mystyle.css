@@ -1,0 +1,335 @@
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+:root {
+  --section-border: rgba(239,234,224,0.13);
+  --highlight-text: #7FB6A8;
+  --text-highlightrgb:127, 182, 168;
+  --muted-text: #A7B3AC;
+  --logo-border: #E8B14D;
+  --white-text: #EFEAE0;
+  --bg-color: #182420;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  color: var(--white-text)
+}
+
+.header-container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg-color);
+}
+
+#myHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 90px;
+  justify-content: space-between;
+}
+
+#myHeader #div1 {
+  margin: 0 0 20px 19px;
+  font-family: sans-serif;
+}
+
+#myHeader h2 {
+  color: var(--highlight-text);
+  font-size: 35px;
+}
+
+#myHeader span{
+  color: var(--logo-border);
+  font-size: 60px;
+}
+
+#myHeader #div2 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+#myHeader .naviclick {
+  text-decoration: none;
+  color: var(--highlight-text);
+  font-family: sans-serif;
+  margin: 0 20px 0 0px;
+}
+
+#myHeader .naviclick:hover {
+  color: var(--logo-border);
+}
+
+.border-top{
+  border-top: 1px solid var(--section-border);
+}
+
+#aboutme {
+  scroll-margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#aboutme h2{
+  color: var(--white-text);
+  font-family: sans-serif;
+}
+
+#aboutme span {
+  color: var(--highlight-text);
+  font-family: 'Newsreader', serif;
+}
+
+#aboutme p {
+  color: var(--muted-text);
+  font-family: 'Newsreader', serif;
+  line-height: 1.9;
+}
+
+#aboutmetext {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 21px 0 15px 35px;
+}
+
+#divimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+#aboutme img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid var(--logo-border) 
+}
+
+#skill {
+  scroll-margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 29px 0;
+}
+
+#skilltext {
+  flex: 1;
+  margin: 30px 0 50px 35px;
+}
+
+#skilltext h2{
+  color: var(--white-text);
+  font-family: sans-serif;
+}
+
+#skilltext p{
+  color: var(--muted-text);
+  font-family: 'Newsreader', serif;
+  line-height: 1.9;
+}
+
+#skillboxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  object-fit: cover;
+  gap: 0px;
+  flex: 1;
+  margin: 90px 0 50px 100px;
+  height: 150px;
+}
+
+#skillboxes p{
+  border: 1px solid var(--highlight-text);
+  padding: 16px;
+  height: 20px;
+  margin: 0 20px 20px 0;
+  border-radius: 8px;
+  background-color: rgba(var(--text-highlightrgb), 0.1);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+#skill .boxes:hover {
+  background-color: var(--highlight-text);
+}
+
+#hobbies {
+  display: flex;
+  flex-direction: column;
+  scroll-margin-top: 100px;
+}
+
+#hobbies #container1{
+  margin: 21px 0 25px 35px;
+  height: 60px;
+}
+
+#container1 h2{
+  color: var(--white-text);
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+#container1 p {
+  color: var(--muted-text);
+  font-family: 'Newsreader', serif;
+}
+
+#container2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+#container2 i{
+  font-size: 40px;
+}
+
+#container2 p{
+  color: var(--muted-text);
+  font-size: 'Newsreader', serif;
+}
+
+#container2 div{
+  border: 1px solid var(--highlight-text);
+  border-radius: 30px;
+  background-color: rgba(var(--text-highlightrgb), 0.1);
+  height: 230px;
+  width: 150px;
+  font-size: 13px;
+  padding: 30px;
+  margin: 0 20px 20px 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+/* ---------- CONTACTS (updated) ---------- */
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+  scroll-margin-top: 100px;
+  padding-bottom: 70px;
+}
+
+#contacts h2{
+  color: var(--white-text);
+  font-family: sans-serif;
+}
+
+#container-contacts1{
+  font-family: 'Newsreader', serif;
+  color: var(--muted-text);
+  margin: 21px 0 10px 35px;
+}
+
+#container-contacts1 p{
+  color: var(--muted-text);
+  margin: 0 0 16px 0;
+  line-height: 1.7;
+}
+
+#container-contacts2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 20px 0 0 35px;
+}
+
+#container-contacts2 i{
+  font-size: 25px;
+  color: var(--logo-border);
+}
+
+#emailcont a,
+#instagramcont a{
+  color: var(--muted-text);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--highlight-text);
+  text-decoration: none;
+}
+
+/* the whole pill is clickable */
+#emailcont a::after,
+#instagramcont a::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+}
+
+#emailcont,
+#instagramcont {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 12px 28px 12px 22px;
+  border: 1px solid var(--highlight-text);
+  border-radius: 30px;
+  background-color: rgba(var(--text-highlightrgb), 0.1);
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+#emailcont:hover,
+#instagramcont:hover {
+  border-color: var(--logo-border);
+  transform: translateY(-3px);
+}
+
+#emailcont:hover a,
+#instagramcont:hover a {
+  color: var(--logo-border);
+}
+
+/* ---------- FOOTER (updated) ---------- */
+
+#myFooter {
+  padding: 40px 35px 36px 35px;
+  border-top: 1px solid var(--section-border);
+}
+
+#myFooter h2{
+  color: var(--highlight-text);
+  font-size: 20px;
+  font-family: sans-serif;
+  border-bottom: 1px solid var(--section-border);
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 18px 0;
+  padding-bottom: 16px;
+}
+
+#myFooter span{
+  color: var(--logo-border);
+  font-size: 52px;
+  line-height: 0;
+}
+
+#myFooter p{
+  font-size: 12px;
+  color: var(--muted-text);
+  font-family: sans-serif;
+  margin: 0;
+}
